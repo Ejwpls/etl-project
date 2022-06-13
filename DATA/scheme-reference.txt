@@ -1,0 +1,46 @@
+reference: 
+
+https://www.hashrate.no/knowhow/earnings - example calulcation of per day
+https://medium.com/london-blockchain-labs/mining-101-calculating-profitability-7df1ff064279 - calculating profitability
+
+
+
+
+GPU
+-
+GPU_name varchar(255)
+power_consumption float
+algorithm varchar(255)
+hastrate float
+
+COST
+-
+GPU_name varchar(255)
+GPU_cost
+
+CRYPTO
+- 
+tag varchar(3)
+algorithm varchar(10)
+block_time float
+block_reward float
+difficulty float
+network_hashrate float
+price_aud float 
+
+
+INPUT
+-
+crypto varchar(255) pk 
+price_aud float
+network_difficulty float
+hashrate float 
+power_consumption float
+power_cost_perunit float
+block_subsidy float
+pool_fee float
+avg_tax_fee float
+other_fee float
+difficult_increment float
+price_increment flaot
+
