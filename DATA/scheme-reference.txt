@@ -8,14 +8,15 @@ https://medium.com/london-blockchain-labs/mining-101-calculating-profitability-7
 
 GPU
 -
-GPU_name varchar(255)
+make varchar(255)
+GPU_name varchar(255) FK >- MINING.GPU_name
 power_consumption float
-algorithm varchar(255)
+algorithm varchar(255) FK >- CRYPTO.algorithm
 hastrate float
 
 COST
 -
-GPU_name varchar(255)
+GPU_name varchar(255) FK >- GPU.GPU_name
 GPU_cost
 
 CRYPTO
@@ -27,6 +28,15 @@ block_reward float
 difficulty float
 network_hashrate float
 price_aud float 
+
+MINING
+-
+GPU_name varchar(255)
+fixed_cost float
+operational_cost float
+Revenue float
+
+
 
 
 INPUT
@@ -43,4 +53,5 @@ avg_tax_fee float
 other_fee float
 difficult_increment float
 price_increment flaot
+
 
