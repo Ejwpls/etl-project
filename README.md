@@ -1,25 +1,17 @@
 # etl-project
 
-Which Crpyto to mine? 
+Crypto Mining Database
 github: https://github.com/Ejwpls/etl-project
 
+Project documents:
 
-- GPUs Crypto hashing efficiency vs Profitability
-- Risks, ROI, Revenue, Profitability(24h)
-Given each Crypto mining rate performs differently with different GPUs.
-- We want to create a relationship to provide which crypto to mine would suits best for your current or potential system and based in WA, AUS
+Notebook: whattomine.ipynb
 
-Data required: [INFO - HOW/WHERE // references]
-GPU information - webscrape // https://www.techpowerup.com/gpu-specs/,
-GPU prices - webscrape // amazon
-Hashing power - webscrape/API // https://www.nicehash.com/mining-hardware, https://whattomine.com/gpus
-Crypto prices & marketcap - API // https://www.coingecko.com/en/api/pricing
-Fixed/static data - electrical price, contingency
+Webscrape script: Get_GPUcost.py
 
-ALOT OF JOINING and AGGREGATING
+Report: ETL Project Report.docx
 
-Customer:
-Cryptocurreny miners, cryptocurrency investors
+This ETL project was to set up a database of the required data to analyse the profitability of crypto mining. With each GPU has different efficiency to which algorithm they are using, there are 100s of combinations that could fit into your budget and see which combination of crypto and GPUs is the most profitable. 
+The main customer that would target this data are Current Crypto miner, starting up Miner, Starting up crypto investor, General investor. 
+Not only the coin prices fluctuates but GPUs also fluctuates in prices and technology. Mining requirements for each coins are also different e.g. GPU RTX 3060 is compatible to mine ETH, ARK but not CAD, BTC.
 
-The main customer that would target this data are Current Crypto miner, Starting up Miner, Starting up crypto invetsor, General investor. 
-The data would determine what is the most profitable crpyto to mine with different GPUs. Not only the the coin prices fluctuates but GPUs also fluctuates in prices and technology. Mining requirements for each coins are also different e.g. GPU RTX 3060 is compatible to mine ETH, ARK but not CAD, BTC. 
