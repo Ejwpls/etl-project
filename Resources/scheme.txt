@@ -1,0 +1,33 @@
+GPU
+-
+GPU_make varchar(255)
+GPU_name varchar(255) PK FK >- MINING.GPU_name
+power_consumption float
+algorithm varchar(255) FK >- CRYPTO.algorithm
+hastrate float
+
+COST
+-
+GPU_make varchar(255) FK >- GPU.GPU_make
+GPU_name varchar(255) PK FK >- GPU.GPU_name
+GPU_cost float
+
+CRYPTO
+- 
+tag varchar(3) PK FK >- MINING.tag
+algorithm varchar(10)
+block_time float
+block_reward float
+difficulty float
+network_hashrate float
+btc_revenue24 float 
+aud_revenue24 float 
+
+MINING
+-
+GPU_name varchar(255)
+tag varchar(3)
+fixed_cost float
+operational_cost float
+revenue float
+profit float
